@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header img {
+    width: 60px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline;
+    margin-left: 10px;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    padding: 2em;
+}
+
+nav {
+    background-color: #705db4;
+    padding: 1em;
+    flex: 0 0 200px;
+    margin-right: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 2em 0;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 0.5em;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #fdfb86;
+    transform: scale(1.1);
+}
+
+section {
+    flex: 1;
+}
+
+footer {
+    background-color: #705db4;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    width: 100%;
+}
+
+text{
+    color: #f7f7f7;
+}
+
+img{
+    border-radius: 20%;
+}
+
+
+    .mosaic-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+    }
+
+    .mosaic-item {
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .mosaic-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+video{
+    width: 300px;
+    height: 250px;
+    vertical-align: middle;
+}
